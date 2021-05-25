@@ -6,7 +6,7 @@ import java.awt.Rectangle;
 public class Ball extends Rectangle {
 
     private final Color color = Color.WHITE;
-    private final int radius = 20;
+    private final int diameter = 20;
     private int dirX;
     private int dirY;
     
@@ -22,8 +22,8 @@ public class Ball extends Rectangle {
         y = 350;
     }
 
-    public int getRadius() {
-        return radius;
+    public int getDiameter() {
+        return diameter;
     }
 
     public int getDirX() {

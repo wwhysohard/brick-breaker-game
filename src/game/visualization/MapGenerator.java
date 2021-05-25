@@ -10,7 +10,7 @@ public class MapGenerator {
 
 	private Brick[][] bricks;
 	
-	public MapGenerator (int row, int col) {
+	public MapGenerator(int row, int col) {
 		initBricks(row, col);
 	}
 	

@@ -37,7 +37,7 @@ public class GameLogic extends JPanel implements KeyListener, ActionListener {
 		addKeyListener(this);
 		setFocusable(true);
 		setFocusTraversalKeysEnabled(false);
-        timer = new Timer(delay,this);
+        timer = new Timer(delay, this);
 		timer.start();
 	}
 	
@@ -66,7 +66,7 @@ public class GameLogic extends JPanel implements KeyListener, ActionListener {
 		
 		// the ball
 		graphics.setColor(ball.getColor());
-		graphics.fillOval((int)ball.getX(), (int)ball.getY(), ball.getRadius(), ball.getRadius());
+		graphics.fillOval((int)ball.getX(), (int)ball.getY(), ball.getDiameter(), ball.getDiameter());
 
 		// when you won the game
 		if(totalBricks <= 0) {
